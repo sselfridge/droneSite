@@ -1,0 +1,44 @@
+html{
+  background-image:  url("img/background.jpg");
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5em;
+  letter-spacing: 20px;
+  margin-top: 0px;
+}
+
+.logo {
+  border: none;
+}
+
+#headshot {
+  border: none;
+  display: inline;
+}
+
+img {
+  max-width:450px;
+  max-height:450px;
+  /*width: auto;
+  height: auto;*/
+  border: 5px solid white;
+}
+
+/*.videos {
+  text-align: center;
+}*/
+
+.soloImg {
+  max-width: none;
+  max-width: 98%;
+  max-height: 100%;
+  margin: 0;
+}
