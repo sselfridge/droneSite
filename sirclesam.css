@@ -105,7 +105,12 @@ hr {
   width: 100%;
 }
 
-
+.anchor {
+    display: block;
+     position: relative;
+     top: -20px;
+     visibility: hidden;
+   }
 
 /*.videos {
   text-align: center;
