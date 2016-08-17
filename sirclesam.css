@@ -30,34 +30,18 @@ img {
 
 .navbar {
   background: white;
-  margin-bottom: 40px;
 }
 
-a.navbar:link {
-    color: black;
-}
-a.navbar:visited {
-    color: black;
-}
-a.navbar:hover {
-    color: gray;
-}
-a.navbar:active {
-    color: black;
-}
 
-a:link {
-    color: white;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: gray;
-}
-a:active {
-    color: white;
-}
+a.navbar:link {    color: black;}
+a.navbar:visited {    color: black;}
+a.navbar:hover {    color: gray;}
+a.navbar:active {    color: black;}
+
+a:link {color: white;}
+a:visited {color: white;}
+a:hover {    color: gray;}
+a:active {    color: white;}
 
 h1 {
   font-weight: bold;
@@ -87,35 +71,34 @@ hr {
   border: none;
 }
 
-.textPicLeft {
+.textPic {
   border: none;
-  float: left;
-  margin-left: 75px;
-}
+  border-radius: 25px;
 
-.textPicRight {
-  border: none;
-  float: right;
-  margin-right: 75px;
 }
 
 .paragraph {
-  float: left;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 25px;
   padding: 15px;
   max-width: 700px;
   font-size: 1.3em;
   letter-spacing: .2em;
+  margin: auto;
 }
 
-.right {
+.rightWithMargin {
   float: right;
+  margin-right: 15%;
 }
 
-.left {
+.leftWithMargin {
   float: left;
+  margin-left: 15%;
 }
+
+.left{  float: left;}
+.right{float: right;}
 
 .legalPricing {
   overflow: auto;
