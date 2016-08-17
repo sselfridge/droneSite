@@ -60,6 +60,10 @@ hr {
 }
 
 .logo { border: none;}
+.smallLogo{
+  width: 100px;
+  padding-top: 25px;
+}
 
 .textPic {
   border: none;
