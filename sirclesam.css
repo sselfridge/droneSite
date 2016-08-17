@@ -64,12 +64,14 @@ hr {
 .textPic {
   border: none;
   border-radius: 25px;
+  width: 20%;
 }
 
 .paragraph {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 25px;
   padding: 15px;
+  width: 50%;
   max-width: 700px;
   font-size: 1.3em;
   letter-spacing: .2em;
