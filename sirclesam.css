@@ -45,10 +45,14 @@ h1 {
   margin-bottom: 0px;
 }
 
-h2  { background-image: linear-gradient(to right, rgba(0 , 0,0, 0), rgba(0,0,0, 1), rgba(0, 0, 0, 0));}
+h2  {
+  font-size: 2.0em;
+  background-image: linear-gradient(to right, rgba(0 , 0,0, 0), rgba(0,0,0, 1), rgba(0, 0, 0, 0));
+}
 
 h2.title  {
   color:black;
+  font-size: 1.5em;
   margin-top: 0px;
   background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));}
 
@@ -113,4 +117,8 @@ hr {
   max-width: 98%;
   max-height: 100%;
   margin: 0;
+}
+
+.aboutMe, .legalPricing, .listings{
+  min-height: 100vh;
 }
