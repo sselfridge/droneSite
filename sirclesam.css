@@ -70,10 +70,9 @@ hr {
     background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));
 }
 
-.logo { border: none;}
-.smallLogo{
-  width: 100px;
-  padding-top: 25px;
+.logo {
+  border: none;
+  margin-top: 35px;
 }
 
 .textPic {
@@ -83,7 +82,7 @@ hr {
 }
 
 .paragraph {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 25px;
   padding: 15px;
   width: 50%;
@@ -91,6 +90,8 @@ hr {
   font-size: 1.3em;
   letter-spacing: .2em;
   margin: auto;
+  text-align: left;
+  font-family: Esteban;
 }
 
 .rightWithMargin {
@@ -104,12 +105,8 @@ hr {
 }
 
 .left{  float: left;}
-.right{float: right;}
+.right{ float: right;}
 
-.legalPricing {
-  overflow: auto;
-  width: 100%;
-}
 
 /*This moves the anchor tags upslightly so the header doesn't block things.*/
 .anchor {
