@@ -94,10 +94,10 @@ hr {
   width: 50%;
   max-width: 700px;
   font-size: 1.3em;
-  letter-spacing: .2em;
+  letter-spacing: .05em;
   margin: auto;
   text-align: left;
-  font-family: Esteban;
+  font-family: Raleway;
 }
 
 .rightWithMargin {
