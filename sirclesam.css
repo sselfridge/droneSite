@@ -57,6 +57,12 @@ h2  {
   background-image: linear-gradient(to right, rgba(0 , 0,0, 0), rgba(0,0,0, 1), rgba(0, 0, 0, 0));
 }
 
+h3.listingTitle  {
+  font-size: 1.5em;
+  background-image: linear-gradient(to right, rgba(0 , 0,0, 0), rgba(0,0,0, 1), rgba(0, 0, 0, 0));
+  margin-top: 0;
+}
+
 h2.title  {
   color:black;
   font-size: 1.5em;
