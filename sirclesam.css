@@ -1,4 +1,11 @@
-html{  background-image:  url("img/background.jpg");}
+html{
+  background-image:  url("img/background.jpg");
+  background-attachment:  fixed;
+  background-size: 100%;
+  /*Stolen from default setting using the below:
+  background: url("img/background.jpg") no-repeat fixed 100%;
+  */
+}
 
 body {
   margin: auto;
