@@ -93,11 +93,6 @@ hr {
   width: 20%;
 }
 
-.noIndent{
-  text-indent: 0;
-}
-
-
 .paragraph {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 25px;
