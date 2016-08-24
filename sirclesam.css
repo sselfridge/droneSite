@@ -26,6 +26,11 @@ img {
   width: 100%;
   background-color: white;
   word-spacing: 50px;
+  height: 30px;
+}
+
+.navbar{
+  padding-top: 10px;
 }
 
 .navbarNoSpacing{word-spacing: normal;}
@@ -83,7 +88,7 @@ hr {
 
 .logo {
   border: none;
-  margin-top: 35px;
+  margin-top: 60px;
 }
 
 .textPic {
