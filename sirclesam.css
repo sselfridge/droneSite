@@ -26,6 +26,7 @@ img {
   width: 100%;
   background-color: white;
   word-spacing: 50px;
+  font-size: 1.3em;
 }
 
 .navbarNoSpacing{word-spacing: normal;}
@@ -89,9 +90,18 @@ hr {
 .textPic {
   border: none;
   border-radius: 25px;
-  max-width: none;
-  max-height: none;
   width: 30%;
+}
+
+#headshot {
+  max-height: none;
+
+}
+
+#pricingShot {
+  max-height: none;
+  max-width: none;
+
 }
 
 .paragraph {
