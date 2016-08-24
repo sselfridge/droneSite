@@ -26,8 +26,6 @@ img {
   width: 100%;
   background-color: white;
   word-spacing: 50px;
-  min-height: 20px;
-  height: 3%;
 }
 
 .navbarNoSpacing{word-spacing: normal;}
