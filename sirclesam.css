@@ -81,7 +81,6 @@ hr {
   height: 2px;
 }
 
-
 .logo {
   border: none;
   margin-top: 35px;
@@ -90,7 +89,9 @@ hr {
 .textPic {
   border: none;
   border-radius: 25px;
-  width: 20%;
+  max-width: none;
+  max-height: none;
+  width: 30%;
 }
 
 .paragraph {
@@ -105,6 +106,16 @@ hr {
   /*text-align: left;*/
   /*text-indent: 5%;*/
   font-family: Raleway;
+}
+
+.specialOffer {
+  font-weight: bold;
+  color: red;
+}
+
+.contactMe {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .align-left{
@@ -144,7 +155,7 @@ hr {
   margin: 0;
 }
 
-.aboutMe, .legalPricing, .listings{
+.aboutMe, .legal, .pricing, .listings{
   min-height: 100vh;
 }
 
