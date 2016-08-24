@@ -1,7 +1,8 @@
 html{
   background-image:  url("img/background.jpg");
   background-attachment:  fixed;
-  background-size: 100%;
+  /*background-size: 100%;*/
+
   /*Stolen from default setting using the below:
   background: url("img/background.jpg") no-repeat fixed 100%;
   */
@@ -17,12 +18,10 @@ body {
 img {
   max-width:450px;
   max-height:450px;
-  /*width: auto;
-  height: auto;*/
   border: 5px solid white;
 }
 
-.fixed {
+.navBarMain {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -31,18 +30,15 @@ img {
 
 .navbarNoSpacing{word-spacing: normal;}
 
-.navbar {background: white;}
-
-
 a.navbar:link {    color: black;}
-a.navbar:visited {    color: black;}
-a.navbar:hover {    color: gray;}
-a.navbar:active {    color: black;}
+a.navbar:visited { color: black;}
+a.navbar:hover {   color: grey;}
+a.navbar:active {  color: black;}
 
-a:link {color: white;}
-a:visited {color: white;}
-a:hover {    color: gray;}
-a:active {    color: white;}
+a:link {    color: white;}
+a:visited { color: white;}
+a:hover {   color: gray;}
+a:active {  color: white;}
 
 h1 {
   font-weight: bold;
@@ -50,6 +46,10 @@ h1 {
   letter-spacing: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.floatControl{
+  overflow: auto;
 }
 
 h2  {
@@ -67,7 +67,8 @@ h2.title  {
   color:black;
   font-size: 1.5em;
   margin-top: 0px;
-  background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));}
+  background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));
+}
 
 hr {
     border: 0;
@@ -75,6 +76,11 @@ hr {
     color:white;
     background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));
 }
+
+.thinHR {
+  height: 2px;
+}
+
 
 .logo {
   border: none;
@@ -87,17 +93,31 @@ hr {
   width: 20%;
 }
 
+.noIndent{
+  text-indent: 0;
+}
+
+
 .paragraph {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 25px;
   padding: 15px;
   width: 50%;
   max-width: 700px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   letter-spacing: .05em;
   margin: auto;
-  text-align: left;
+  /*text-align: left;*/
+  /*text-indent: 5%;*/
   font-family: Raleway;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.align-center{
+  text-align: center;
 }
 
 .rightWithMargin {
@@ -131,4 +151,8 @@ hr {
 
 .aboutMe, .legalPricing, .listings{
   min-height: 100vh;
+}
+
+.footer {
+  background-color: black;
 }
