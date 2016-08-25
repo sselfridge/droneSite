@@ -29,6 +29,10 @@ img {
   height: 30px;
 }
 
+.teaser{
+  display: none;
+}
+
 .navbar{
   padding-top: 10px;
 }
