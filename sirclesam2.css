@@ -21,28 +21,12 @@ img {
   border: 5px solid white;
 }
 
-.logo {
-  border: none;
-  margin-top: 60px;
-  max-height: 350px;
-}
-
 .navBarMain {
   position: fixed;
   width: 100%;
   background-color: white;
   word-spacing: 50px;
   height: 30px;
-}
-
-h2.title  {
-  color:black;
-  font-size: 4.5em;
-  margin-top: 0px;
-  background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));
-}
-.teaser{
-  display: none;
 }
 
 .navbar{
@@ -84,6 +68,12 @@ h3.listingTitle  {
   margin-top: 0;
 }
 
+h2.title  {
+  color:black;
+  font-size: 1.5em;
+  margin-top: 0px;
+  background-image: linear-gradient(to right, rgba(255 , 255,255, 0), rgba(255,255,255, 0.75), rgba(255, 255, 255, 0));
+}
 
 hr {
     border: 0;
@@ -96,7 +86,10 @@ hr {
   height: 2px;
 }
 
-
+.logo {
+  border: none;
+  margin-top: 60px;
+}
 
 .textPic {
   border: none;
