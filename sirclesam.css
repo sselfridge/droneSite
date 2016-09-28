@@ -104,7 +104,6 @@ hr {
 }
 
 
-
 .textPic {
   border: none;
   border-radius: 25px;
@@ -113,13 +112,11 @@ hr {
 
 #headshot {
   max-height: none;
-
 }
 
 #pricingShot {
   max-height: none;
   max-width: none;
-
 }
 
 .paragraph {
