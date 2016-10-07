@@ -42,7 +42,8 @@ function showSlides(n) {
 
 
 var video = document.getElementById('video');
-video.addEventListener('click',function(){
+var button = document.getElementsByTagName('button')[0];
+button.addEventListener('click',function(){
   video.play();
   alert("playing!!!");
 },false);
