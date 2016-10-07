@@ -50,6 +50,7 @@ h2.title  {
 
 .bold {
   font-weight: 900;
+  text-decoration: underline;
 }
 
 .navbar{
