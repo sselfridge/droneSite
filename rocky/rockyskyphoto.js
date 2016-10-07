@@ -41,9 +41,8 @@ function showSlides(n) {
 }
 
 
-var video = document.getElementById('video');
-var button = document.getElementsByTagName('button')[0];
-button.addEventListener('click',function(){
-  video.play();
-  alert("playing!!!");
-},false);
+// var video = document.getElementById('video');
+// var button = document.getElementsByTagName('button')[0];
+// video.addEventListener('click',function(){
+//   video.play();
+// },false);
