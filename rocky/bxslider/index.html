@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Box Slider Test</title>
+    <!-- jQuery library (served from Google) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="plugins/jquery.fitvids.js" charset="utf-8"></script>
+
+<script src="jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+  </head>
+  <body>
+  <style>
+  /* This centers the img and video */
+  img,
+  video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  </style>
+    <!-- "../../img/titanic.mp4" -->
+
+
+    <ul class="bxslider">
+      <!-- Video must have id="vid{index}" to properly play/pause -->
+      <li><video id="vid0" loop autoplay >
+        <source src="../../img/titanic.mp4" type="video/mp4">
+        <source src="../../img/titanic.webm" type="video/webm">
+        <source src="../../img/titanic.ogv" type="video/ogg">
+          Nothing to Play for you.
+      </video></li>
+      <li><img src="images/pic4.jpg" /></li>
+      <li><img src="images/pic1.jpg" /></li>
+      <li><video id="vid3" loop autoplay >
+        <source src="../../img/titanic.mp4" type="video/mp4">
+        <source src="../../img/titanic.webm" type="video/webm">
+        <source src="../../img/titanic.ogv" type="video/ogg">
+          Nothing to Play for you.
+      </video></li>
+      <li><video id="vid1" loop autoplay >
+        <source src="../../img/titanic.mp4" type="video/mp4">
+        <source src="../../img/titanic.webm" type="video/webm">
+        <source src="../../img/titanic.ogv" type="video/ogg">
+          Nothing to Play for you.
+      </video></li>
+
+    </ul>
+    <button type="button" name="button">PlayVideo</button>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        video: true,
+        onSliderLoad: autoPlay,
+        onSlideBefore: autoPlayWrapper,
+        onSlideAfter: pauseVideo
+      });
+    });
+
+    // Calls the autoPlay function with the index of the next slide
+    function autoPlayWrapper(asdf,asdf,index){
+      autoPlay(index);
+    }
+
+    // play the video in the slide at index
+    function autoPlay(index){
+      var idx = parseInt(index,10);
+      var vid = document.querySelector("#vid"+idx);
+      if(vid){
+        vid.play();
+      }
+    }
+
+    function pauseVideo(asdf,index,asdf){
+      console.log("Pausing Slide:" + index);
+      var idx = parseInt(index,10);
+      var vid = document.querySelector("#vid"+idx);
+      if(vid){
+        vid.pause();
+      }
+    }
+    </script>
+
+  </body>
+</html>
