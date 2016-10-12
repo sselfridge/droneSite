@@ -12,7 +12,7 @@
 <!-- bxSlider CSS file -->
 <link href="jquery.bxslider.css" rel="stylesheet" />
   </head>
-  <body onload="document.getElementById('vid0').play();">
+  <body onload="document.getElementById('vid0').play();alert('body loaded')">
   <style>
   /* This centers the img and video */
   img,
@@ -57,7 +57,7 @@
     $(document).ready(function(){
       $('.bxslider').bxSlider({
         video: true,
-        onSliderLoad: autoPlay,
+        // onSliderLoad: autoPlay,
         onSlideBefore: autoPlayWrapper,
         onSlideAfter: pauseVideo
       });
