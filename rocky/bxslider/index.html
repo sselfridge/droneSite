@@ -49,9 +49,11 @@
       </video></li>
 
     </ul>
-    <button type="button" name="button">PlayVideo</button>
+    <button id="meinButton" type="button" name="button">PlayVideo</button>
 
     <script type="text/javascript">
+
+
     $(document).ready(function(){
       $('.bxslider').bxSlider({
         video: true,
@@ -84,6 +86,11 @@
         vid.pause();
       }
     }
+
+    $("button").click(function(){
+      console.log("Buttoned");
+      document.querySelector("#vid0").play();
+    })
     </script>
 
   </body>
