@@ -12,7 +12,7 @@
 <!-- bxSlider CSS file -->
 <link href="jquery.bxslider.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="document.getElementById('vid0').play();">
   <style>
   /* This centers the img and video */
   img,
@@ -62,7 +62,8 @@
     });
 
     // Calls the autoPlay function with the index of the next slide
-    function autoPlayWrapper(asdf,asdf,index){
+    function autoPlayWrapper(asdf,asdf1,index){
+      console.log(asdf);
       autoPlay(index);
     }
 
@@ -75,8 +76,8 @@
       }
     }
 
-    function pauseVideo(asdf,index,asdf){
-      console.log("Pausing Slide:" + index);
+    function pauseVideo(asdf,index,asdf2){
+      console.log(asdf);
       var idx = parseInt(index,10);
       var vid = document.querySelector("#vid"+idx);
       if(vid){
