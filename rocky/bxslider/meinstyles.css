@@ -1,0 +1,46 @@
+.logo{
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+
+.sliderContainer{
+  max-width: 1200px;
+  margin: auto;
+}
+
+li>img,li>video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*//Make prev/next buttons bigger*/
+.bx-wrapper .bx-prev {
+	background: url(images/controls_large.png) no-repeat 0 -64px;
+}
+
+.bx-wrapper .bx-next {
+	background: url(images/controls_large.png) no-repeat -86px -64px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	width: 64px;
+	height: 64px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -86px 0;
+}
+
+/*//Remove outline around slider*/
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border:  none;
+}
