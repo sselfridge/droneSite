@@ -23,8 +23,12 @@ function findBootstrapEnvironment() {
     }
 }
 
-
-
 $("#info").text(findBootstrapEnvironment());
-$("#screen").text(screen.width);
-console.log(screen.width);
+$("#screen").text($(document).height() + "--" + $(window).height());
+$("#screen2").text($(document).width() + "--" + $(window).width());
+
+$(window).resize(function(){
+  $("#info").text(findBootstrapEnvironment());
+  $("#screen").text($(document).height() + "--" + $(window).height());
+  $("#screen2").text($(document).width() + "--" + $(window).width());
+});

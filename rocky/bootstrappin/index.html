@@ -4,9 +4,6 @@
   <meta charset="utf-8">
   <title>BootStrappin!!</title>
   <script src="assets/jquery-3.1.1.js" charset="utf-8"></script>
-
-  <!-- https://github.com/Rahisify/bxslider-4 Bootstrap compatible version of slider-->
-  <link href="assets/jquery.bxslider.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="assets/bootstrap.min.css" media="screen" title="no title">
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
@@ -16,16 +13,21 @@
 </head>
 <body>
 
-<div id="navbarPlaceholder"></div>
-<div id="logoPlaceholder"></div>
+  <div id="navbarPlaceholder"></div>
+  <div id="logoPlaceholder"></div>
 
-  <div class="sliderContainer">
-      <img id="slideShow" src="img/1.jpg" alt="asdf"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-sm-12"><img class="slideShow" src="img/1.jpg" alt="asdf"/></div>
+      <div class="col-md-2"></div>
+    </div >
   </div>
 
   <div class="infoBar">
     Current Device/ENV is:<span id="info">unknown</span><br>
-    screenWidth is:<span id="screen">unknown</span>
+    screenWidth is:<span id="screen">unknown</span><br>
+    screenWidth is:<span id="screen2">unknown</span>
   </div>
 
   <a href="gallery.html">Go to the Gallery</a>

@@ -1,5 +1,37 @@
-#slideShow {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
+
+.slideShow{
+  left: 0;
+  width: 100%;
+}
+.slide{
+}
+
+.sliderContainer{
+  /*trick to making images stack horizontally (with inline-block)*/
+  /*white-space: nowrap;*/
+}
+
+@media (max-width: 768px) {
+  .navbar-header{
+      text-align:center;
+  }
+
+  .navbar-toggle {
+      float: none;
+      border: none;
+  }
+  .navbar,.dropdown-menu {
+    font-size: 24px;
+  }
+
+    /*.navbar-text {
+        float: none;
+        vertical-align: top;
+        background: red;
+        margin: auto;
+    }
+
+    .navbar .navbar-collapse .navbar-header{
+        text-align: center;
+    }*/
 }
