@@ -1,0 +1,42 @@
+.swiper-container {
+    /*width: 100%;*/
+    max-width: 1000px;
+    margin: 0 10%;
+}
+
+.swiper-wrapper{
+}
+
+.swiper-scrollbar{
+  display: none;
+}
+
+img,video{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*//VideoWrapper code ot make youtube video responsive.*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.status.Box{
+  background: black;
+}
+
+/*make Pagination dot black, not blue*/
+.swiper-pagination-bullet-active{
+  background: black;
+}
