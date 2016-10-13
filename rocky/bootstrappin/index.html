@@ -9,6 +9,8 @@
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <script src="assets/bootstrap.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="strappin.css">
+  <link rel="stylesheet" href="dist/css/swiper.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="swiperTest.css" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
@@ -18,9 +20,35 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8 col-sm-12"><img class="slideShow" src="img/1.jpg" alt="asdf"/></div>
-      <div class="col-md-2"></div>
+      <div class="col-md-2 col-lg-2"></div>
+      <!-- Slider Column -->
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><video id="video" loop >
+              <source src="img/1.mp4" type="video/mp4"/>
+              Nothing to Play for you.
+            </video></div>
+            <div class="swiper-slide"><img src="img/1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt="" /></div>
+            <div class="swiper-slide"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/2kbdn804h7s" frameborder="0" allowfullscreen></iframe></div></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>      </div>
+      <div class="col-md-2 col-lg-2"></div>
     </div >
   </div>
 
@@ -33,5 +61,7 @@
   <a href="gallery.html">Go to the Gallery</a>
 
   <script src="strappin.js" charset="utf-8"></script>
+  <script src="dist/js/swiper.min.js"></script>
+  <script src="swiperTest.js" charset="utf-8"></script>
 </body>
 </html>

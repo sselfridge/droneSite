@@ -23,7 +23,11 @@
   .navbar,.dropdown-menu {
     font-size: 24px;
   }
-
+  .navbar-brand{
+    padding: 0;
+    height: 65px;
+    float: left;
+  }
     /*.navbar-text {
         float: none;
         vertical-align: top;
