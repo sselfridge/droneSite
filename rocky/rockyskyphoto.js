@@ -40,7 +40,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+//on android the video needs the .play() method called on it.
+//for some reason this isn't working in a body onload() method.
 var video = document.getElementById('video');
 var button = document.getElementsByTagName('button')[0];
 video.addEventListener('click',function(){
