@@ -6,7 +6,7 @@
 
 .sliderContainer{
   max-width: 1200px;
-  margin: auto;
+  margin: auto 15% ;
 }
 
 li>img,li>video {
@@ -38,9 +38,9 @@ li>img,li>video {
 }
 
 /*//Remove outline around slider*/
-.bx-wrapper .bx-viewport {
+/*.bx-wrapper .bx-viewport {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border:  none;
-}
+}*/

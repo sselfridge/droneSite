@@ -1,21 +1,21 @@
 
 $(document).ready(function(){
   $('.bxslider').bxSlider({
-    video: true,
+    // video: true,
     // onSliderLoad: autoPlay,
-    onSlideBefore: autoPlayWrapper,
-    onSlideAfter: pauseVideo
+    // onSlideBefore: autoPlayWrapper,
+    // onSlideAfter: pauseVideo
   });
 });
 
 // Calls the autoPlay function with the index of the next slide
 function autoPlayWrapper(asdf,asdf1,index){
-  console.log(asdf);
   autoPlay(index);
 }
 
 // play the video in the slide at index
 function autoPlay(index){
+  console.log("AutoPlay:" + index);
   var idx = parseInt(index,10);
   var vid = document.querySelector("#vid"+idx);
   if(vid){
@@ -38,7 +38,7 @@ $("button").click(function(){
 })
 
 $.get("logo.html",function(data){
-  $(".logoPlaceholder").replaceWith(data);
+  $("#logoPlaceholder").replaceWith(data);
 });
 
 $.get("navbar.html",function(data){
