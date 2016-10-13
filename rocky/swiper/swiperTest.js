@@ -34,8 +34,8 @@ function slideChange(swiper){
   }
 }
 
-
-
+// Android fix
+// Using touchstart will play the video as soon as the screen is touched.
 // get the video
 var video = document.querySelector('#video');
 // use the whole window and a *named function*
@@ -45,3 +45,8 @@ window.addEventListener('touchstart', function videoStart() {
   // remove from the window and call the function we are removing
   this.removeEventListener('touchstart', videoStart);
 });
+
+
+//iphone fix
+// youtube code:
+// <div class="videoWrapper"><iframe src="https://www.youtube.com/embed/2kbdn804h7s" frameborder="0" allowfullscreen></iframe></div>
