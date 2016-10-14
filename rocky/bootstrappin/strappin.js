@@ -6,6 +6,9 @@ $.get("navbar.html",function(data){
   $("#navbarPlaceholder").replaceWith(data);
 });
 
+var navLinks = $("#navbarPlaceholder");
+console.log("NavLinked" + navLinks);
+
 function findBootstrapEnvironment() {
     var envs = ['xs', 'sm', 'md', 'lg'];
 

@@ -1,41 +1,25 @@
 
-.slideShow{
-  left: 0;
-  width: 100%;
-}
-.slide{
-}
-
-.sliderContainer{
-  /*trick to making images stack horizontally (with inline-block)*/
-  /*white-space: nowrap;*/
-}
-
+/*//Custom Bootstrap behavior on small screens*/
 @media (max-width: 768px) {
+
+  /*Center the menu button in collapsed navbar*/
   .navbar-header{
       text-align:center;
   }
-
   .navbar-toggle {
       float: none;
       border: none;
   }
+
+  /*Make text large on mobile device sized windows*/
   .navbar,.dropdown-menu {
     font-size: 24px;
   }
+
+  /*//Logo on Navbar? currently not a fan*/
   .navbar-brand{
     padding: 0;
     height: 65px;
     float: left;
   }
-    /*.navbar-text {
-        float: none;
-        vertical-align: top;
-        background: red;
-        margin: auto;
-    }
-
-    .navbar .navbar-collapse .navbar-header{
-        text-align: center;
-    }*/
 }
