@@ -1,0 +1,25 @@
+
+/*//Custom Bootstrap behavior on small screens*/
+@media (max-width: 768px) {
+
+  /*Center the menu button in collapsed navbar*/
+  .navbar-header{
+      text-align:center;
+  }
+  .navbar-toggle {
+      float: none;
+      border: none;
+  }
+
+  /*Make text large on mobile device sized windows*/
+  .navbar,.dropdown-menu {
+    font-size: 24px;
+  }
+
+  /*//Logo on Navbar? currently not a fan*/
+  .navbar-brand{
+    padding: 0;
+    height: 65px;
+    float: left;
+  }
+}

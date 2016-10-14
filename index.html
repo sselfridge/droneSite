@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BootStrappin!!</title>
+  <script src="assets/jquery-3.1.1.js" charset="utf-8"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css" media="screen" title="no title">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script src="assets/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="rockysky.css">
+  <link rel="stylesheet" href="dist/css/swiper.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="meinswiper.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+
+  <div id="navbarPlaceholder"></div>
+  <div id="logoPlaceholder"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <!-- Slider Column -->
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><video id="video" loop >
+              <source src="img/1.mp4" type="video/mp4"/>
+              Nothing to Play for you.
+            </video></div>
+            <div class="swiper-slide"><img src="img/1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt="" /></div>
+            <div class="swiper-slide"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/2kbdn804h7s" frameborder="0" allowfullscreen></iframe></div></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+    </div >
+  </div> <!--container-->
+</div> <!--container-->
+
+<div class="infoBar">
+  Current Device/ENV is:<span id="info">unknown</span><br>
+  screenWidth is:<span id="screen">unknown</span><br>
+  screenWidth is:<span id="screen2">unknown</span>
+</div>
+
+<a href="gallery.html">Go to the Gallery</a>
+
+<script src="rockysky.js" charset="utf-8"></script>
+<script src="dist/js/swiper.min.js"></script>
+<script src="meinswiper.js" charset="utf-8"></script>
+</body>
+</html>
