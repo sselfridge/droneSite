@@ -3,16 +3,16 @@
 var navList = "Tom";
 var ralph = 1234;
 
-$.get("logo.html",function(data){
+$.get("templateHtml/logo.html",function(data){
   $("#logoPlaceholder").replaceWith(data);
   console.log("Replace Logo");
 });
 
-$.get("navbar.html",function(data){
+$.get("templateHtml/navbar.html",function(data){
   $("#navbarPlaceholder").replaceWith(data);
   selectActiveNav();
 });
-$.get("footer.html",function(data){
+$.get("templateHtml/footer.html",function(data){
   $("#footerPlaceHolder").replaceWith(data);
 });
 
