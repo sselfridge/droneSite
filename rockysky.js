@@ -12,6 +12,11 @@ $.get("navbar.html",function(data){
   $("#navbarPlaceholder").replaceWith(data);
   selectActiveNav();
 });
+$.get("footer.html",function(data){
+  $("#footerPlaceHolder").replaceWith(data);
+});
+
+
 
 // Called After loading the navbar
 // Removes active from all navs then assign it to one where the ID is in the URL
