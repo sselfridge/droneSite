@@ -51,6 +51,12 @@ function findBootstrapEnvironment() {
 $("#info").text(findBootstrapEnvironment());
 $("#screen").text($(document).height() + "--" + $(window).height());
 $("#screen2").text($(document).width() + "--" + $(window).width());
+$("#deviceType").text(navigator.userAgent);
+
+//Replace html with youtube video on iOS devices
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  
+}
 
 $(window).resize(function(){
   $("#info").text(findBootstrapEnvironment());
