@@ -5,7 +5,6 @@ var ralph = 1234;
 
 $.get("templateHtml/logo.html",function(data){
   $("#logoPlaceholder").replaceWith(data);
-  console.log("Replace Logo");
 });
 
 $.get("templateHtml/navbar.html",function(data){
@@ -30,22 +29,26 @@ function selectActiveNav(){
       $(this).addClass("active");
     }
   });
+  if(loc.match("gallery.html")){
+    $("#navbar").addClass("navbar-fixed-top");
+    console.log("Gallery Matched");
+  }
 }
 
 function findBootstrapEnvironment() {
-    var envs = ['xs', 'sm', 'md', 'lg'];
-    var $el = $('<div>');
-    $el.appendTo($('body'));
+  var envs = ['xs', 'sm', 'md', 'lg'];
+  var $el = $('<div>');
+  $el.appendTo($('body'));
 
-    for (var i = envs.length - 1; i >= 0; i--) {
-        var env = envs[i];
+  for (var i = envs.length - 1; i >= 0; i--) {
+    var env = envs[i];
 
-        $el.addClass('hidden-'+env);
-        if ($el.is(':hidden')) {
-            $el.remove();
-            return env;
-        }
+    $el.addClass('hidden-'+env);
+    if ($el.is(':hidden')) {
+      $el.remove();
+      return env;
     }
+  }
 }
 
 $("#info").text(findBootstrapEnvironment());
@@ -55,7 +58,7 @@ $("#deviceType").text(navigator.userAgent);
 
 //Replace html with youtube video on iOS devices
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-  
+
 }
 
 $(window).resize(function(){
@@ -63,3 +66,10 @@ $(window).resize(function(){
   $("#screen").text($(document).height() + "--" + $(window).height());
   $("#screen2").text($(document).width() + "--" + $(window).width());
 });
+
+
+
+function getURLParameter(name) {
+  // http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript/11582513#11582513
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+}
