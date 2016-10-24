@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.stdswipe', {
     // Optional parameters
     loop: true,
     nextButton: '.swiper-button-next',
@@ -11,6 +11,19 @@ $(document).ready(function () {
     onSlideChangeStart: slideChange,
     // scrollbarHide: false,
     paginationClickable: true,
+    keyboardControl: true
+    // scrollbar: '.swiper-scrollbar'
+  })
+  var fadeSwiper = new Swiper ('.fadeswipe', {
+    // Optional parameters
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+    onSlideChangeStart: slideChange,
+    // scrollbarHide: false,
+    paginationClickable: true,
+    effect: 'fade',
     keyboardControl: true
     // scrollbar: '.swiper-scrollbar'
   })
