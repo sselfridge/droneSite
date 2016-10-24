@@ -34,14 +34,17 @@ function slideChange(swiper){
 // Android fix
 // Using touchstart will play the video as soon as the screen is touched.
 // get the video
-var video = document.querySelector('#video');
-// use the whole window and a *named function*
-window.addEventListener('touchstart', function videoStart() {
-  video.play();
-  // console.log('first touch');
-  // remove from the window and call the function we are removing
-  this.removeEventListener('touchstart', videoStart);
-});
+if(!((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))) {
+
+  var video = document.querySelector('#video');
+  // use the whole window and a *named function*
+  window.addEventListener('touchstart', function videoStart() {
+    video.play();
+    // console.log('first touch');
+    // remove from the window and call the function we are removing
+    this.removeEventListener('touchstart', videoStart);
+  });
+}
 
 
 //iphone fix
