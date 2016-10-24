@@ -4,25 +4,27 @@
 
   /*Center the menu button in collapsed navbar*/
   .navbar-header{
-      text-align:center;
+    text-align:center;
   }
   .navbar-toggle {
-      float: none;
-      border: none;
+    float: none;
+    border: none;
   }
+
+  /*Added to get navbar to shrink now - need .navbar-toggle to include collapsed version.
+  http://stackoverflow.com/questions/18599778/decreasing-height-of-bootstrap-3-0-navbar*/
+  .navbar-nav > li > a, .navbar-toggle {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      height: 25px;
+  }
+  .navbar { min-height:20px !important;}
 
   /*Make text large on mobile device sized windows*/
   .navbar,.dropdown-menu {
-    font-size: 24px;
+    font-size: 18px;
   }
-
-  /*//Logo on Navbar? currently not a fan*/
-  .navbar-brand{
-    padding: 0;
-    height: 65px;
-    float: left;
-  }
-}
+} /*@media max-width:768px;*/
 
 /*Regular CSS for whole site*/
 body{
@@ -34,4 +36,6 @@ body{
   position: absolute;
   bottom:0; left:0;
   float: left;
+  z-index: 99999;
+  background: white;
 }
