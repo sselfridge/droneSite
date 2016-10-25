@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
   //initialize swiper when document ready
+  //TODO: use a loop to initilize swipers - brute forcing it for now.
+  //See jquery solutionss here: https://github.com/nolimits4web/Swiper/issues/273
   var mySwiper = new Swiper ('.stdswipe', {
     // Optional parameters
     loop: true,
@@ -24,31 +26,62 @@ $(document).ready(function () {
     // scrollbarHide: false,
     paginationClickable: true,
     effect: 'fade',
-    keyboardControl: true
+    keyboardControl: true,
+    autoplay: 1000
     // scrollbar: '.swiper-scrollbar'
   })
+
+  var fadeSwiper2 = new Swiper ('.fadeswipe2', {
+    // Optional parameters
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+    onSlideChangeStart: slideChange,
+    // scrollbarHide: false,
+    paginationClickable: true,
+    effect: 'fade',
+    keyboardControl: false,
+    // scrollbar: '.swiper-scrollbar'
+  })
+
+  var panoswipe = new Swiper ('.panoswipe', {
+    // Optional parameters
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 0,
+    freeMode:true,
+    slidesPerView: 2,
+    keyboardControl: false
+    // scrollbar: '.swiper-scrollbar'
+  })
+
 });
 
-
-$(".statusBox").css("background","red");
+var usingiOS = false;
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  usingiOS = true;
+}
 
 function slideChange(swiper){
+  if(usingiOS) return; //iOS shouldn't autoplay video.
   var index = swiper.activeIndex;
   var vid = swiper.slides[index].querySelector("#video");
   if(vid){
     // console.log("We're on video!");
     vid.play();
-    $(".statusBox").css("background","yellow");
   }else{
-    $(".statusBox").css("background","orange");
+    //EmptyElse for now....
   }
 }
 
 // Android fix
 // Using touchstart will play the video as soon as the screen is touched.
 // get the video
-if(!((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))) {
-
+if(!usingiOS){
   var video = document.querySelector('#video');
   // use the whole window and a *named function*
   window.addEventListener('touchstart', function videoStart() {

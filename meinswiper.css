@@ -12,7 +12,7 @@
 /*//VideoWrapper code ot make youtube video responsive.*/
 .videoWrapper {
 	position: relative;
-	padding-bottom: 50%; /* 16:9 */
+	padding-bottom: 48%;
 	padding-top: 25px;
 	height: 0;
 }
@@ -32,3 +32,7 @@
 .swiper-pagination-bullet-active{
   background: black;
 }
+
+/*.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: -4px 5px;
+}*/
