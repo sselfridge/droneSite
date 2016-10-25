@@ -1,187 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Gallery</title>
-    <script src="assets/jquery-3.1.1.js" charset="utf-8"></script>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/bootstrap.min.css" media="screen" title="no title">
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-    <script src="assets/bootstrap.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="dist/css/swiper.min.css" media="screen" title="no title">
-    <link rel="stylesheet" href="meinswiper.css" media="screen">
-    <link rel="stylesheet" href="rockysky.css">
-    <link rel="stylesheet" href="gallery.css" media="screen" title="no title">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="favicon.png" type="image/png">
-  </head>
-  <body>
-
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <script src="assets/jquery-3.1.1.js" charset="utf-8"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css" media="screen" title="no title">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script src="assets/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="dist/css/swiper.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="meinswiper.css" media="screen">
+  <link rel="stylesheet" href="rockysky.css">
+  <link rel="stylesheet" href="gallery.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <div class="wrap">
     <div id="navbarPlaceholder"></div>
     <!-- <div class="infoBar">
-      Current Device/ENV is:<span id="info">unknown</span><br>
-      screenWidth is:<span id="screen">unknown</span><br>
-      screenWidth is:<span id="screen2">unknown</span>
-    </div> -->
-    <div class="container galleryContainer">
-      <div class="row row-grid">
-        <h2><a name="landscape" class="fixedNavA"></a>Landscape</h2>
-        <p>
-          Get a unique perspective
-        </p>
-        <div class="col-xs-12 col-sm-6 ">
-          <a href="viewImage.html?img=1"><img class="gal-img" src="img/1.jpg" alt="" /></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 ">
-          <a href="viewImage.html?img=3"><img class="gal-img" src="img/3.jpg" alt="" /></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 ">
-          <a href="viewImage.html?img=4"><img class="gal-img" src="img/4.jpg" alt="" /></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 ">
+    Current Device/ENV is:<span id="info">unknown</span><br>
+    screenWidth is:<span id="screen">unknown</span><br>
+    screenWidth is:<span id="screen2">unknown</span>
+  </div> -->
+  <div class="container galleryContainer">
+    <div class="row row-grid">
+      <h2><a name="landscape" class="fixedNavA"></a>Landscape</h2>
+      <p>
+        Views from on high!  <br>Basic shots start at $60!
+      </p>
+      <div class="col-xs-12 col-sm-6 ">
+        <a href="viewImage.html?img=1"><img class="gal-img" src="img/1.jpg" alt="" /></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 ">
+        <a href="viewImage.html?img=3"><img class="gal-img" src="img/3.jpg" alt="" /></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 ">
+        <a href="viewImage.html?img=4"><img class="gal-img" src="img/4.jpg" alt="" /></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 ">
         <a href="viewImage.html?img=3">  <img class="gal-img" src="img/3.jpg" alt="" /></a>
-        </div>
-      </div> <!--Row-->
-      <h2><a name="construction" class="fixedNavA"></a>Construction: Showcase your progress</h2>
-      <p>
-        Using GPS we're able to fly the same path weeks apart, letting you see your project rise from the ground up!
-      </p>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div class="swiper-container fadeswipe">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/sprouts/1.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/sprouts/2.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sprouts/3.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sprouts/4.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sprouts/5.jpg" alt="" /></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+      </div>
+    </div> <!--Row-->
+    <h2><a name="construction" class="fixedNavA"></a>Construction: Showcase your progress</h2>
+    <p>
+      Using GPS we're able to fly the same path weeks apart, letting you see your project rise from the ground up! <br>
+      Repeated visits start at $120 then $60 per progress visit.
+    </p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="swiper-container fadeswipe">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/sprouts/1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/sprouts/2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sprouts/3.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sprouts/4.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sprouts/5.jpg" alt="" /></div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="col-xs-12 col-sm-6 ">
-          <div class="swiper-container fadeswipe2">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/sproutsPano/1.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/sproutsPano/2.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sproutsPano/3.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sproutsPano/4.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sproutsPano/5.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/sproutsPano/6.jpg" alt="" /></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="col-xs-12 col-sm-6 ">
+        <div class="swiper-container fadeswipe2">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/sproutsPano/1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/sproutsPano/2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sproutsPano/3.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sproutsPano/4.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sproutsPano/5.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/sproutsPano/6.jpg" alt="" /></div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="swiper-container stdswipe">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/conPlaceHolder1.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/conPlaceHolder2.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/conPlaceHolder3.jpg" alt="" /></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+      </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
+    </div> <!--Row-->
+    <h2><a name="realestate"></a>Real Estate</h2>
+    <h3>
+      Special Realtor Offer: Get our full service package for only $50 for your first listing!
+    </h3>
+    <p>
+      Aerial photography give your listings something you just can't get from shooting on the ground.
+    </p>
+    <div class="row row-grid">
+      <div class="col-xs-12">
+        <img class="gal-img" src="img/realEstate/realh1.jpg" alt="" />
+      </div>
+      <p>By showing off the amazing scenery around your property, we can give your clients a much better view of their new home.</p>
+      <div class="col-xs-12">
+        <img class="gal-img" src="img/realEstate/realh2.jpg" alt="" />
+      </div>
+      <p>Some properties can only be shot properly from the air due to the terrain around them.</p>
+      <div class="col-xs-12">
+        <img class="gal-img" src="img/realEstate/realh3.jpg" alt="" />
+      </div>
+      <a href="contact.html">Contact us a call today and see what aerial photography can add to your listings!</a>
+    </div> <!--Row-->
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>        </div>
-        <div class="col-xs-12 col-sm-6">
-          <img class="gal-img" src="img/conPlaceHolder2.jpg" alt="" />
-        </div>
-      </div> <!--Row-->
-      <h2><a name="realestate"></a>Real Estate</h2>
-      <p>
-        Show your listing in the best light
-      </p>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div class="swiper-container stdswipe">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/conPlaceHolder1.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/conPlaceHolder2.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/conPlaceHolder3.jpg" alt="" /></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>        </div>
-        <div class="col-xs-12 col-sm-6">
-          <img class="gal-img" src="img/conPlaceHolder2.jpg" alt="" />
-        </div>
-      </div> <!--Row-->
-
-      <h2><a name="panos" class="fixedNavA"></a>Panoramas</h2>
-      <p>
-        See the world around you!
-      </p>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
-          <div class="swiper-container panoswipe">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/PanoTesting/1.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/2.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/3.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/4.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/5.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/6.jpg" alt="1" /></div>
-              <div class="swiper-slide"><img src="img/PanoTesting/7.jpg" alt="1" /></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+    <h2><a name="panos" class="fixedNavA"></a>Panoramas</h2>
+    <p>
+      See the world around you!
+    </p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+        <div class="swiper-container panoswipe">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/PanoTesting/1.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/2.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/3.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/4.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/5.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/6.jpg" alt="1" /></div>
+            <div class="swiper-slide"><img src="img/PanoTesting/7.jpg" alt="1" /></div>
           </div>
-        </div>
-      </div> <!--Row-->
-    </div> <!--container-->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-    <div id="footerPlaceHolder"></div>
-    
-    <script src="rockysky.js" charset="utf-8"></script>
-    <script src="gallery.js" charset="utf-8"></script>
-    <script src="dist/js/swiper.min.js"></script>
-    <script src="meinswiper.js" charset="utf-8"></script>
-  </body>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div> <!--Row-->
+    <h2><a name="tinyplanets" class="fixedNavA"></a>Tiny Planets</h2>
+    <p>
+      Be the center of your own world!
+    </p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+        <img class="gal-img" src="img/largephotos/TP1_small.jpg" alt="" />
+      </div>
+    </div> <!--Row-->
+  </div> <!--container-->
+</div>
+
+<div id="footerPlaceHolder"></div>
+
+<script src="rockysky.js" charset="utf-8"></script>
+<script src="gallery.js" charset="utf-8"></script>
+<script src="dist/js/swiper.min.js"></script>
+<script src="meinswiper.js" charset="utf-8"></script>
+</body>
 </html>
