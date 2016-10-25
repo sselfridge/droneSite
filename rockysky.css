@@ -26,6 +26,10 @@
   }
 } /*@media max-width:768px;*/
 
+.navbar-nav{
+  color:white;
+}
+
 /*Regular CSS for whole site*/
 body,html{
   font-family: Montserrat;
@@ -33,25 +37,31 @@ body,html{
   height: 100%;
 }
 
+div.navbar-collapse>ul>li>a {
+  color:white;
+}
+div.navbar-collapse>ul>li>a:hover {
+  color:#337ab7;
+}
+
+
+
 .infoBar{
   position: absolute;
   bottom:0; left:0;
   float: left;
 }
 
+/*Content wrap arond everything in the body but the footer.*/
 .wrap{
   min-height: 98.5%;
   padding-bottom: 20px;
 }
 
 .paragraph{
-  /*max-width: 700px;*/
-  /*margin: auto;*/
-  /*padding-bottom: 50px;
-  padding-left: 5%;
-  padding-right: 5%;*/
-  /*text-align: left;*/
   text-indent: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 a.contactLink{
@@ -59,7 +69,16 @@ a.contactLink{
   font-size: 1.5em;
 }
 
+#headshot{
+  width: 100%;
+  max-width: 360px;
+}
 .aboutImg{
-  /*width: 100%;*/
+  width: 100%;
   /*max-width: 900px;*/
+}
+
+/*Add class row-grid to get top margins on rows*/
+.row.row-grid [class*="col-"] {
+  margin-top: 15px;
 }
