@@ -16,14 +16,14 @@ $.get("templateHtml/footer.html",function(data){
 });
 
 
-
 // Called After loading the navbar
 // Removes active from all navs then assign it to one where the ID is in the URL
 // Possible problem with partial matches.
 function selectActiveNav(){
   var loc = window.location.pathname;
+
   $(".navbar .navbar-nav > li").each(function() {
-    // console.log("ID:" + $(this).attr('id'));
+      return; //This isn't needed, might add in later if things get more complicated.
     $(this).removeClass("active");
     if ( loc.match($(this).attr('id'))) {
       $(this).addClass("active");
@@ -73,3 +73,14 @@ function getURLParameter(name) {
   // http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript/11582513#11582513
   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
+
+// http://stackoverflow.com/a/23769601/901311
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click();
+        }
+    });
+});
