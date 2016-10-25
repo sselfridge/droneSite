@@ -17,61 +17,66 @@
 </head>
 <body>
   <!-- <div class="infoBar">
-    Current Device/ENV is:<span id="info">unknown</span><br>
-    screenWidth is:<span id="screen">unknown</span><br>
-    screenWidth is:<span id="screen2">unknown</span><br>
-    current device is:<span id="deviceType">unknown</span>
-  </div> -->
-  <div id="logoPlaceholder"></div>
-  <div id="navbarPlaceholder"></div>
-
-
+  Current Device/ENV is:<span id="info">unknown</span><br>
+  screenWidth is:<span id="screen">unknown</span><br>
+  screenWidth is:<span id="screen2">unknown</span><br>
+  current device is:<span id="deviceType">unknown</span>
+</div> -->
+<div class="wrap">
+<div id="logoPlaceholder"></div>
+<div id="navbarPlaceholder"></div>
 
   <!-- TODO: Add Autoplay to slider - after 1st run of movie -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-0 col-md-1"></div>
-      <!-- Slider Column -->
-      <div class="col-sm-12 col-md-10">
-        <!-- Slider main container -->
-        <div class="swiper-container stdswipe">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><video id="video" loop >
-              <source src="img/1.mp4" type="video/mp4"/>
-              Nothing to Play for you.
-            </video></div>
-            <div class="swiper-slide"><img src="img/1.jpg" alt="1" /></div>
-            <div class="swiper-slide"><img src="img/2.jpg" alt="" /></div>
-            <div class="swiper-slide"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/2kbdn804h7s" frameborder="0" allowfullscreen></iframe></div></div>
-            <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+  <div id="main">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-0 col-md-1"></div>
+        <!-- Slider Column -->
+        <div class="col-sm-12 col-md-10">
+          <!-- Slider main container -->
+          <div class="swiper-container stdswipe">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/1.jpg" alt="1" /></div>
+              <div class="swiper-slide">
+                <video id="video" loop poster="img/titanicPoster.png">
+                <source src="img/1.mp4" type="video/mp4"/>
+                Nothing to Play for you.
+              </video></div>
+              <div class="swiper-slide"><img src="img/2.jpg" alt="" /></div>
+              <!-- <div class="swiper-slide">
+                <div class="videoWrapper">
+                  <iframe src="https://www.youtube.com/embed/2kbdn804h7s" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div> -->
+              <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+        </div> <!--col-sm-12 col-md-10-->
+        <div class="col-sm-0 col-md-1"></div>
+      </div> <!--row-->
+    </div> <!--container-->
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev swiper-button-white"></div>
-          <div class="swiper-button-next swiper-button-white"></div>
+    <div id="frontPageBlurb" class="">
+      <h2>Your source for professional affordable aerial photography in Denver!</h2>
+    </div>
+  </div> <!--#Main-->
+</div> <!--Wrap-->
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-      </div> <!--col-sm-12 col-md-10-->
-      <div class="col-sm-0 col-md-1"></div>
-    </div> <!--row-->
-  </div> <!--container-->
+<div id="footerPlaceHolder"></div>
 
-  <div id="frontPageBlurb" class="">
-    <h2>Your source for professional affordable aerial photography in Denver!</h2>
-  </div>
-
-  <div id="footerPlaceHolder">
-
-  </div>
-
-  <script src="rockysky.js" charset="utf-8"></script>
-  <script src="dist/js/swiper.min.js"></script>
-  <script src="meinswiper.js" charset="utf-8"></script>
+<script src="rockysky.js" charset="utf-8"></script>
+<script src="dist/js/swiper.min.js"></script>
+<script src="meinswiper.js" charset="utf-8"></script>
 </body>
 </html>
