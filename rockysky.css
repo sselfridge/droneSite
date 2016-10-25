@@ -41,4 +41,25 @@ body,html{
 
 .wrap{
   min-height: 98.5%;
+  padding-bottom: 20px;
+}
+
+.paragraph{
+  /*max-width: 700px;*/
+  /*margin: auto;*/
+  /*padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;*/
+  /*text-align: left;*/
+  text-indent: 15px;
+}
+
+a.contactLink{
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.aboutImg{
+  /*width: 100%;*/
+  /*max-width: 900px;*/
 }
