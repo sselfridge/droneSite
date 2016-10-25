@@ -1,46 +1,26 @@
-.gal-img{
-  width: 100%;
-}
-
-h2{
-  text-align: center;
-}
-
-.galleryContainer{
-  margin: 3% auto;
-}
-
-/*Add class row-grid to get top margins on rows*/
-.row.row-grid [class*="col-"] {
-  margin-top: 15px;
-}
-
 /*//movepage accordingly when anchor linked*/
+/*TODO : see if this is needed after repaging.*/
 a.fixedNavA {
   display: block;
   position: relative;
   top: -55px;
   visibility: hidden;
 }
-
 @media (max-width: 768px) {
   a.fixedNavA {
     top: -70px;
   }
 }
 
-/*@media (min-width: 1200px) {
-.row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
-margin-top: 0;
+.gal-img{
+  width: 100%;
+  /*max-height: 600px;*/
 }
+
+.galleryContainer{
+  margin: 3% auto;
 }
-@media (min-width: 992px) {
-.row.row-grid [class*="col-md-"] + [class*="col-md-"] {
-margin-top: 0;
-}
-}
-@media (min-width: 768px) {
-.row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {
-margin-top: 0;
-}*/
+
+#iphoneMock{
+  max-width: 350px;
 }
