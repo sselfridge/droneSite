@@ -24,15 +24,7 @@
 	height: 100%;
 }
 
-.status.Box{
-  background: black;
-}
-
 /*make Pagination dot black, not blue*/
 .swiper-pagination-bullet-active{
-  background: black;
+  background-color: black;
 }
-
-/*.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-  margin: -4px 5px;
-}*/
