@@ -8,7 +8,7 @@ a.fixedNavA {
 }
 @media (max-width: 768px) {
   a.fixedNavA {
-    top: -70px;
+    top: -45px;
   }
 }
 
@@ -18,7 +18,7 @@ a.fixedNavA {
 }
 
 .galleryContainer{
-  margin: 3% auto;
+  margin: 5% auto;
 }
 
 #iphoneMock{
