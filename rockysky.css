@@ -24,6 +24,10 @@
   .navbar,.dropdown-menu {
     font-size: 18px;
   }
+
+  span,p{
+    font-size: 1.3em;
+  }
 } /*@media max-width:768px;*/
 
 .navbar-nav{
@@ -81,4 +85,8 @@ a.contactLink{
 /*Add class row-grid to get top margins on rows*/
 .row.row-grid [class*="col-"] {
   margin-top: 15px;
+}
+
+.text-red{
+  color: red;
 }
