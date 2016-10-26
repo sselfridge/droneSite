@@ -14,7 +14,10 @@ a.fixedNavA {
 
 .gal-img{
   width: 100%;
-  /*max-height: 600px;*/
+}
+
+.fix-height{
+  max-height: 550px;
 }
 
 .galleryContainer{
