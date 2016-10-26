@@ -1,0 +1,92 @@
+
+/*//Custom Bootstrap behavior on small screens*/
+@media (max-width: 768px) {
+
+  /*Center the menu button in collapsed navbar*/
+  .navbar-header{
+    text-align:center;
+  }
+  .navbar-toggle {
+    float: none;
+    border: none;
+  }
+
+  /*Added to get navbar to shrink now - need .navbar-toggle to include collapsed version.
+  http://stackoverflow.com/questions/18599778/decreasing-height-of-bootstrap-3-0-navbar*/
+  .navbar-nav > li > a, .navbar-toggle {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      height: 25px;
+  }
+  .navbar { min-height:20px !important;}
+
+  /*Make text large on mobile device sized windows*/
+  .navbar,.dropdown-menu {
+    font-size: 18px;
+  }
+
+  span,p{
+    font-size: 1.3em;
+  }
+} /*@media max-width:768px;*/
+
+.navbar-nav{
+  color:white;
+}
+
+/*Regular CSS for whole site*/
+body,html{
+  font-family: Montserrat;
+  text-align: center;
+  height: 100%;
+}
+
+div.navbar-collapse>ul>li>a {
+  color:white;
+}
+div.navbar-collapse>ul>li>a:hover {
+  color:#337ab7;
+}
+
+
+
+.infoBar{
+  position: absolute;
+  bottom:0; left:0;
+  float: left;
+}
+
+/*Content wrap arond everything in the body but the footer.*/
+.wrap{
+  min-height: 98.5%;
+  padding-bottom: 20px;
+}
+
+.paragraph{
+  text-indent: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a.contactLink{
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+#headshot{
+  width: 100%;
+  max-width: 360px;
+}
+.aboutImg{
+  width: 100%;
+  /*max-width: 900px;*/
+}
+
+/*Add class row-grid to get top margins on rows*/
+.row.row-grid [class*="col-"] {
+  margin-top: 15px;
+}
+
+.text-red{
+  color: red;
+}

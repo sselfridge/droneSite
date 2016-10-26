@@ -1,0 +1,29 @@
+/*//movepage accordingly when anchor linked*/
+/*TODO : see if this is needed after repaging.*/
+a.fixedNavA {
+  display: block;
+  position: relative;
+  top: -55px;
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  a.fixedNavA {
+    top: -45px;
+  }
+}
+
+.gal-img{
+  width: 100%;
+}
+
+.fix-height{
+  max-height: 550px;
+}
+
+.galleryContainer{
+  margin: 5% auto;
+}
+
+#iphoneMock{
+  max-width: 350px;
+}

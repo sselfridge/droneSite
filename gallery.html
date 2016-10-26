@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <script src="assets/jquery-3.1.1.js" charset="utf-8"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/bootstrap.min.css" media="screen" title="no title">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script src="assets/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="dist/css/swiper.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="meinswiper.css" media="screen">
+  <link rel="stylesheet" href="rockysky.css">
+  <link rel="stylesheet" href="gallery.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83062623-3', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div id="navbarPlaceholder"></div>
+    <div class="container galleryContainer">
+      <div class="row row-grid">
+        <h2><a name="landscape" class="fixedNavA"></a>Aerial Stills</h2>
+        <hr>
+        <h3>
+          Views from on high.</h3> <h4>Many image sizes available!  <br>Shots start at $60!
+          </h4>
+          <div class="col-xs-12 col-md-6 ">
+            <span>Our lower resolution images are perfect for phone wallpapers.</span>
+            <img id="iphoneMock"class="img-fluid img-responsive center-block gal-img" src="img/iphone.jpg" alt="" />
+          </div>
+          <div class="col-xs-12 col-md-6 ">
+            <span>We can also create 163 Million pixel images fit to hang in your home.</span>
+            <a href="viewImage.html?img=2"><img class="gal-img" src="img/framed.jpg" alt="" /></a>
+          </div>
+        </div> <!--Row-->
+        <h2><a name="construction" class="fixedNavA"></a>Construction</h2>
+        <hr>
+        <h3>Showcase your progress</h3>
+        <p>
+          Using GPS we're able to fly the same path weeks apart, letting you see your project rise from the ground up! <br>
+          Initial consult and high resolution establishing shots start at $120 - discounts on follow up shoots.
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="swiper-container fadeswipe">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/sprouts/1.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img src="img/sprouts/2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts/3.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts/4.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts/5.jpg" alt="" /></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 ">
+            <div class="swiper-container fadeswipe2">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/sprouts_overhead/1.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img src="img/sprouts_overhead/2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts_overhead/3.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts_overhead/4.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts_overhead/5.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/sprouts_overhead/6.jpg" alt="" /></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div> <!--Row-->
+        <a name="realestate" class="fixedNavA"></a>
+        <h2>Real Estate</h2>
+        <hr>
+        <h3 class="text-red">
+          Special Offer: Get our full service real estate package for only $50 for your first listing!
+        </h3>
+        <p>
+          Aerial photography give your listings something you just can't get from shooting on the ground.
+        </p>
+        <div class="row">
+          <h3 class="col-xs-6">From the ground</h3>
+          <h3 class="col-xs-6">From the air</h3>
+        </div>
+        <div class="row row-grid">
+          <div class="col-xs-12">
+            <img class="gal-img" src="img/real_estate/realh1.jpg" alt="" />
+          </div>
+          <p>By showing off the amazing scenery around your property, we can give your clients a much better view of their new home.</p>
+          <div class="col-xs-12">
+            <img class="gal-img" src="img/real_estate/realh2.jpg" alt="" />
+          </div>
+          <p>Some properties can only be shot properly from the air due to the terrain around them. Don't miss out on displaying the whole property.</p>
+          <div class="col-xs-12">
+            <img class="gal-img" src="img/real_estate/realh3.jpg" alt="" />
+          </div>
+        </div> <!--Row-->
+        <a href="contact.html" class="contactLink"><h4>Contact us today and see what aerial photography can add to your listings!</h4></a>
+
+
+        <h2><a name="panoramas" class="fixedNavA"></a>Panoramas</h2>
+        <hr>
+        <p>
+          See the world around you!
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+            <div class="swiper-container panoswipe">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/1.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/2.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/3.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/1.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/2.jpg" alt="1" /></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/pano/3.jpg" alt="1" /></div>
+
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div> <!--Row-->
+        <h2><a name="tinyplanets" class="fixedNavA"></a>Tiny Planets</h2>
+        <hr>
+        <p>
+          Be the center of your own world!
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+            <img class="gal-img tpImg" src="img/tinyplanet_small.jpg" alt="" />
+          </div>
+        </div> <!--Row-->
+      </div> <!--container-->
+    </div>
+
+    <div id="footerPlaceHolder"></div>
+
+    <script src="rockysky.js" charset="utf-8"></script>
+    <script src="gallery.js" charset="utf-8"></script>
+    <script src="dist/js/swiper.min.js"></script>
+    <script src="meinswiper.js" charset="utf-8"></script>
+  </body>
+  </html>
