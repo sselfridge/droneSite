@@ -54,9 +54,9 @@ $(document).ready(function () {
     paginationClickable: true,
     spaceBetween: 0,
     freeMode:true,
-    slidesPerView: 2,
-    keyboardControl: false
-    // scrollbar: '.swiper-scrollbar'
+    slidesPerView: 1.5,
+    keyboardControl: false,
+    grabCursor: true
   })
 
 });
