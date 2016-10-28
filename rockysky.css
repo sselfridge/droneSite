@@ -33,86 +33,86 @@
   span,p{
     font-size: 1.3em;
   }
-  } /*@media max-width:768px;*/
+} /*@media max-width:768px;*/
 
-  .navbar-nav{
-    color:white;
-  }
+.navbar-nav{
+  color:white;
+}
 
-  @media (min-width: 992px) {
-    #bs-example-navbar-collapse-1{
-      margin-left: 10%;
-      margin-right: 10%;
-    }
+@media (min-width: 992px) {
+  #bs-example-navbar-collapse-1{
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  @media (min-width: 1200px) {
-    #bs-example-navbar-collapse-1{
-      margin-left: 15%;
-      margin-right: 15%;
-    }
+}
+@media (min-width: 1200px) {
+  #bs-example-navbar-collapse-1{
+    margin-left: 15%;
+    margin-right: 15%;
   }
-  @media (min-width: 1700px) {
-    #bs-example-navbar-collapse-1{
-      margin-left: 20%;
-      margin-right: 20%;
-    }
+}
+@media (min-width: 1700px) {
+  #bs-example-navbar-collapse-1{
+    margin-left: 20%;
+    margin-right: 20%;
   }
+}
 
-  /*Regular CSS for whole site*/
-  body,html{
-    font-family: Montserrat;
-    text-align: center;
-    height: 100%;
-  }
+/*Regular CSS for whole site*/
+body,html{
+  font-family: Montserrat;
+  text-align: center;
+  height: 100%;
+}
 
-  p,h4,h5,span,a{
-    font-family: 'Open Sans', sans-serif;
-  }
+p,h4,h5,span,a{
+  font-family: 'Open Sans', sans-serif;
+}
 
-  div.navbar-collapse>ul>li>a {
-    color:white;
-  }
-  div.navbar-collapse>ul>li>a:hover {
-    color:#337ab7;
-  }
+div.navbar-collapse>ul>li>a {
+  color:white;
+}
+div.navbar-collapse>ul>li>a:hover {
+  color:#337ab7;
+}
 
-  .infoBar{
-    position: absolute;
-    bottom:0; left:0;
-    float: left;
-  }
+.infoBar{
+  position: absolute;
+  bottom:0; left:0;
+  float: left;
+}
 
-  /*Content wrap arond everything in the body but the footer.*/
-  .wrap{
-    min-height: 98.5%;
-    padding-bottom: 20px;
-  }
+/*Content wrap arond everything in the body but the footer.*/
+.wrap{
+  min-height: 98.5%;
+  padding-bottom: 20px;
+}
 
-  .paragraph{
-    text-indent: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.paragraph{
+  text-indent: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  a.contactLink{
-    text-decoration: underline;
-    font-size: 1.5em;
-  }
+a.contactLink{
+  text-decoration: underline;
+  font-size: 1.5em;
+}
 
-  #headshot{
-    width: 100%;
-    max-width: 360px;
-  }
-  .aboutImg{
-    width: 100%;
-    /*max-width: 900px;*/
-  }
+#headshot{
+  width: 100%;
+  max-width: 360px;
+}
+.aboutImg{
+  width: 100%;
+  /*max-width: 900px;*/
+}
 
-  /*Add class row-grid to get top margins on rows*/
-  .row.row-grid [class*="col-"] {
-    margin-top: 15px;
-  }
+/*Add class row-grid to get top margins on rows*/
+.row.row-grid [class*="col-"] {
+  margin-top: 15px;
+}
 
-  .text-red{
-    color: red;
-  }
+.text-red{
+  color: red;
+}
