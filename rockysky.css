@@ -13,10 +13,15 @@
 
   /*Added to get navbar to shrink now - need .navbar-toggle to include collapsed version.
   http://stackoverflow.com/questions/18599778/decreasing-height-of-bootstrap-3-0-navbar*/
-  .navbar-nav > li > a, .navbar-toggle {
+  .navbar-toggle {
       padding-top: 0 !important;
       padding-bottom: 0 !important;
-      height: 25px;
+      height: 30px;
+  }
+  .navbar-nav > li > a{
+      padding-top: 5px !important;
+      padding-bottom: 30px !important;
+      height: 30px;
   }
   .navbar { min-height:20px !important;}
 
@@ -41,14 +46,16 @@ body,html{
   height: 100%;
 }
 
+p,h4,h5,span{
+  font-family: 'Open Sans', sans-serif;
+}
+
 div.navbar-collapse>ul>li>a {
   color:white;
 }
 div.navbar-collapse>ul>li>a:hover {
   color:#337ab7;
 }
-
-
 
 .infoBar{
   position: absolute;
