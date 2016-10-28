@@ -14,14 +14,14 @@
   /*Added to get navbar to shrink now - need .navbar-toggle to include collapsed version.
   http://stackoverflow.com/questions/18599778/decreasing-height-of-bootstrap-3-0-navbar*/
   .navbar-toggle {
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-      height: 30px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 30px;
   }
   .navbar-nav > li > a{
-      padding-top: 5px !important;
-      padding-bottom: 30px !important;
-      height: 30px;
+    padding-top: 5px !important;
+    padding-bottom: 30px !important;
+    height: 30px;
   }
   .navbar { min-height:20px !important;}
 
@@ -33,67 +33,86 @@
   span,p{
     font-size: 1.3em;
   }
-} /*@media max-width:768px;*/
+  } /*@media max-width:768px;*/
 
-.navbar-nav{
-  color:white;
-}
+  .navbar-nav{
+    color:white;
+  }
 
-/*Regular CSS for whole site*/
-body,html{
-  font-family: Montserrat;
-  text-align: center;
-  height: 100%;
-}
+  @media (min-width: 992px) {
+    #bs-example-navbar-collapse-1{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  @media (min-width: 1200px) {
+    #bs-example-navbar-collapse-1{
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+  @media (min-width: 1700px) {
+    #bs-example-navbar-collapse-1{
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
 
-p,h4,h5,span,a{
-  font-family: 'Open Sans', sans-serif;
-}
+  /*Regular CSS for whole site*/
+  body,html{
+    font-family: Montserrat;
+    text-align: center;
+    height: 100%;
+  }
 
-div.navbar-collapse>ul>li>a {
-  color:white;
-}
-div.navbar-collapse>ul>li>a:hover {
-  color:#337ab7;
-}
+  p,h4,h5,span,a{
+    font-family: 'Open Sans', sans-serif;
+  }
 
-.infoBar{
-  position: absolute;
-  bottom:0; left:0;
-  float: left;
-}
+  div.navbar-collapse>ul>li>a {
+    color:white;
+  }
+  div.navbar-collapse>ul>li>a:hover {
+    color:#337ab7;
+  }
 
-/*Content wrap arond everything in the body but the footer.*/
-.wrap{
-  min-height: 98.5%;
-  padding-bottom: 20px;
-}
+  .infoBar{
+    position: absolute;
+    bottom:0; left:0;
+    float: left;
+  }
 
-.paragraph{
-  text-indent: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+  /*Content wrap arond everything in the body but the footer.*/
+  .wrap{
+    min-height: 98.5%;
+    padding-bottom: 20px;
+  }
 
-a.contactLink{
-  text-decoration: underline;
-  font-size: 1.5em;
-}
+  .paragraph{
+    text-indent: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-#headshot{
-  width: 100%;
-  max-width: 360px;
-}
-.aboutImg{
-  width: 100%;
-  /*max-width: 900px;*/
-}
+  a.contactLink{
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
 
-/*Add class row-grid to get top margins on rows*/
-.row.row-grid [class*="col-"] {
-  margin-top: 15px;
-}
+  #headshot{
+    width: 100%;
+    max-width: 360px;
+  }
+  .aboutImg{
+    width: 100%;
+    /*max-width: 900px;*/
+  }
 
-.text-red{
-  color: red;
-}
+  /*Add class row-grid to get top margins on rows*/
+  .row.row-grid [class*="col-"] {
+    margin-top: 15px;
+  }
+
+  .text-red{
+    color: red;
+  }
