@@ -45,6 +45,10 @@ $(document).ready(function () {
     // scrollbar: '.swiper-scrollbar'
   })
 
+  //only show .5 slides on the pano for XS (mobile) screens.
+  var slidesPerPano = ($(window).width() < 768) ? .5 : 1.5;
+  console.log(slidesPerPano);
+
   var panoswipe = new Swiper ('.panoswipe', {
     // Optional parameters
     loop: true,
@@ -54,12 +58,13 @@ $(document).ready(function () {
     paginationClickable: true,
     spaceBetween: 0,
     freeMode:true,
-    slidesPerView: 1.5,
+    slidesPerView: slidesPerPano,
     keyboardControl: false,
     grabCursor: true
-  })
-
+  });
 });
+
+
 
 var usingiOS = false;
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
