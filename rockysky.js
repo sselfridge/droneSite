@@ -14,6 +14,9 @@ $.get("templateHtml/navbar.html",function(data){
 $.get("templateHtml/footer.html",function(data){
   $("#footerPlaceHolder").replaceWith(data);
 });
+$.get("templateHtml/examples.html",function(data){
+  $("#examplesPlaceHolder").replaceWith(data);
+});
 
 
 // Called After loading the navbar
