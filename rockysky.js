@@ -1,7 +1,5 @@
 "use strict";
 
-var navList = "Tom";
-var ralph = 1234;
 
 $.get("templateHtml/logo.html",function(data){
   $("#logoPlaceholder").replaceWith(data);
