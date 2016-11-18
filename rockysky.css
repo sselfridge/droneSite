@@ -39,6 +39,7 @@
   color:white;
 }
 
+
 @media (min-width: 992px) {
   #bs-example-navbar-collapse-1{
     margin-left: 10%;
@@ -56,6 +57,12 @@
     margin-left: 20%;
     margin-right: 20%;
   }
+}
+
+#contact-nav{
+  background: yellow;
+  color: black;
+  font-weight: 800;
 }
 
 /*Regular CSS for whole site*/
@@ -94,8 +101,11 @@ div.navbar-collapse>ul>li>a:hover {
   padding-right: 5%;
 }
 
-a.contactLink{
+a.galleryLink{
+  color: white;
   text-decoration: underline;
+  width: 100%;
+  white-space: normal;
   font-size: 1.5em;
 }
 
@@ -115,4 +125,17 @@ a.contactLink{
 
 .text-red{
   color: red;
+}
+
+.callToAction{
+  background-color: #272727;
+  height:70px;
+  text-align: center;
+}
+
+a.contactBtn{
+  margin-top: 20px;
+  background-color: yellow;
+  color: black;
+  text-indent: 0px;
 }
