@@ -1,0 +1,22 @@
+.construction-copy {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*Add space between list items on this page.*/
+li{
+  margin: 10px 0;
+}
+
+strong{
+  font-size: 18px;
+}
+
+@media (min-width: 980px) {
+  #ogdenSwiper{
+    margin-top: 50px;
+  }
+ }

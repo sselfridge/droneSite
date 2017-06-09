@@ -16,6 +16,8 @@ $(document).ready(function () {
     keyboardControl: true
     // scrollbar: '.swiper-scrollbar'
   })
+
+  //loops fadeSwiper that autostarts
   var fadeSwiper = new Swiper ('.fadeswipe', {
     // Optional parameters
     loop: true,
@@ -31,6 +33,7 @@ $(document).ready(function () {
     // scrollbar: '.swiper-scrollbar'
   })
 
+  //2nd autoplay fadeSwiper on page
   var fadeSwiper2 = new Swiper ('.fadeswipe2', {
     // Optional parameters
     loop: true,
@@ -43,11 +46,12 @@ $(document).ready(function () {
     effect: 'fade',
     keyboardControl: false,
     // scrollbar: '.swiper-scrollbar'
+    autoplay: 1000
   })
 
   //only show .5 slides on the pano for XS (mobile) screens.
   var slidesPerPano = ($(window).width() < 768) ? .5 : 1.5;
-  console.log(slidesPerPano);
+  console.log("Slides per pano (based on window size):" + slidesPerPano);
 
   var panoswipe = new Swiper ('.panoswipe', {
     // Optional parameters
