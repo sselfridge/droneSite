@@ -1,7 +1,22 @@
-.gal-img{
+.gal-img-realestate{
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .galleryContainer{
   margin: 5% auto;
+}
+
+.realestate-text{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.whyRocky-copy  strong{
+  font-size: 18px;
+}
+
+/*Add space between list items on this page.*/
+li{
+  margin: 10px 0;
 }

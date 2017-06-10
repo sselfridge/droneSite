@@ -15,7 +15,9 @@ $.get("templateHtml/footer.html",function(data){
 $.get("templateHtml/examples.html",function(data){
   $("#examplesPlaceHolder").replaceWith(data);
 });
-
+$.get("templateHtml/whyRocky.html",function(data){
+  $("#examplesPlaceHolder").replaceWith(data);
+});
 
 // Called After loading the navbar
 // Removes active from all navs then assign it to one where the ID is in the URL
