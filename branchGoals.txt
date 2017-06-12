@@ -1,0 +1,19 @@
+Goals for this branch: addConstructionProgress
+
+Overall:
+Incorperate the images from ogden and parkside to create a single landing page for construction progress
+
+
+Steps:
+Remove single gallery page
+Remove panoramas from header
+Single pages for:
+  real estate
+  construction
+  gallery
+
+Add links to each on bottom of homepage + links to instagram + youtube
+
+Use gallery to show fav shots, like orginal sam selfridge site - offer servicess
+
+hype up wedding part?

@@ -1,7 +1,6 @@
 
 var urlImg = Number(getURLParameter("img"));
 
-console.log("urlImg:" + urlImg);
-
-$("#soloImg").attr('src','img/large_photos/'+urlImg+'.jpg');
-console.log("viewImage.js");
+var imgPath = 'img/gal_lg/RockySkyPhoto-'+urlImg+'.jpg'
+console.log("Getting image:" + imgPath);
+$("#soloImg").attr('src',imgPath);

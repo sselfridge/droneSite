@@ -2,7 +2,6 @@
 
 console.log("Galleryried");
 
-
 var filename = getURLParameter("filename");
 
 console.log("File:" + filename);
