@@ -65,6 +65,10 @@
   font-weight: 800;
 }
 
+.fa-instagram{
+  font-size: 2em;
+}
+
 /*Regular CSS for whole site*/
 body,html{
   font-family: Montserrat;
@@ -107,6 +111,10 @@ a.galleryLink{
   width: 100%;
   white-space: normal;
   font-size: 1.5em;
+}
+
+h5.galleryHeaderLink{
+  margin-left: 5%;
 }
 
 #headshot{

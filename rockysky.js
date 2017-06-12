@@ -1,6 +1,6 @@
 "use strict";
 
-
+// Load templateHtml files into the page
 $.get("templateHtml/logo.html",function(data){
   $("#logoPlaceholder").replaceWith(data);
 });
