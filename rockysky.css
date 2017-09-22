@@ -147,3 +147,7 @@ a.contactBtn{
   color: black;
   text-indent: 0px;
 }
+
+#soloImg {
+  width:100vw;
+}
