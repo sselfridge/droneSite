@@ -2,7 +2,7 @@ Goals for this branch: addConstructionProgress
 
 Overall:
 Incorperate the images from ogden and parkside to create a single landing page for construction progress
-
+Done.
 
 Steps:
 Remove single gallery page
