@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - node
+deploy:
+  provider: s3
+  access_key_id: AKIAIILEUAAZUL3YDUNQ
+  secret_access_key:
+    secure: Q8jJ2tSJySKnJa2sEqSiIeDNBlHNcDZeD7o/oEhNMX+2kAguzAe6+nUFJ/BmFkpSVrVnem9vhdg23slfLUUov/p0Fpk/VchI3LKP9wNrbRiH6vhCWA1S9oU7hXXz79ai5sE9+SG1EszONhCbkrXZblP30Hz1iYpDTk/EqIn7RkwCyyTLZ52EVUgocCCGzKXLPQ8s5Z208/BV5ndXAuFkIZPd32CYmSc8kHWh7O8FN7mGxhBLp57vuQAFq12t/8rSSej713RzRGdogRidQQeVc0URhY3fxmlrQmjqslOzeZCm4EAv9Uz8Vxk0Qs/gnG0+/HG3RgteOd+m5XgNALuZ3aDP4QibOduPi/KX7HraY56QveFD2pOR6pZY/Ul3UCzwB8303esMJDCWLFdGB+Dj6IgRYqJ82EtUxPheBsEgtWeOQPPc/eYEZqW4E/EakVWEnnebDfM9rMYe1qvy6UKH/S9brTXLHEFY7BQL8UGlQzxXe3PaB9JHlbigYjySXKvFRN14TAXn60AynkaJcbGwuNdlftC5qbGd1u6eRRCT00q7gT98u+OZ1LANNQgLl8Y9Jew7km1QFwn+a9cK6HNENnwwXkI7o5zsGQQjBP+S1VK2G54TCaK82cw4bn/NjJ3C+NkSrFHyBT0BtlNp0HjWOe41YrF8JQp9camPj0N82HM=
+  bucket: www.rockyskyphoto.com
+  acl: public_read 
