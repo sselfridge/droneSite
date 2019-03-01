@@ -1,6 +1,6 @@
 
 
-console.log("Galleryried");
+console.log("Galleryried");  
 
 var filename = getURLParameter("filename");
 
