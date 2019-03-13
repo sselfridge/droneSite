@@ -1,0 +1,19 @@
+{
+  "name": "dronesite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+	"test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirclesam/droneSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirclesam/droneSite/issues"
+  },
+  "homepage": "https://github.com/sirclesam/droneSite#readme"
+}
